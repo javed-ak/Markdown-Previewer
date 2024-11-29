@@ -1,5 +1,6 @@
 import { marked } from "marked";
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 marked.setOptions({
   // gfm: true,
@@ -29,7 +30,7 @@ function App() {
 
 > Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js)
 
-![alt text](HeroImage.jpg)
+![alt text](ProfileImg.jpg)
 
 **bold text**
     `);
@@ -37,7 +38,11 @@ function App() {
   return (
     <>
     <div className="bg-zinc-100">
-      <div className="p-1 bg-zinc-800 text-slate-50 text-sm text-center">Markdown Live Preview</div>
+      <div className="grid grid-cols-3 p-2 bg-zinc-800 text-slate-50">
+        <div></div>
+        <div className="text-sm text-center">Markdown Live Preview</div>
+        <div className="flex justify-end items-center mr-5"><a className="hover:scale-105 transition-all" href="https://github.com/javed-ak/Markdown-Previewer.git" target="_blank"><FaGithub size={18}/></a></div>
+      </div>
       <div className="grid grid-col-1 lg:grid-cols-2 gap-2 h-full">
         <div className="bg-zinc-50 shadow-lg h-screen lg:h-full">
           <div className="p-1 bg-green-600 text-slate-50 font-bold text-center shadow-lg sticky top-0">Editor</div>
