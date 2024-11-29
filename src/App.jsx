@@ -11,9 +11,20 @@ marked.setOptions({
 function App() {
   const [text, setText] = useState(`
 # Hi, I'm Javed Akhtar
+
+![alt text](ProfileImg.jpg)
+
 ## I'm Passionate Full Stack Developer
 
 [Click to know more about me](https://javedakhtar.vercel.app)
+
+(Full Stack Developer, **MERN Stack Specialization**)
+
+> Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js)
+
+- React
+- Marked.js
+- Tailwind CSS
 
 \`console.log('Hello world!') \`
 
@@ -24,15 +35,6 @@ function App() {
 }
 \`\`\`
 
-- First item
-- Second item
-- Third item
-
-> Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js)
-
-![alt text](ProfileImg.jpg)
-
-**bold text**
     `);
 
   return (
